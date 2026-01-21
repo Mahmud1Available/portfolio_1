@@ -1,0 +1,642 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mahmud | Professional Portfolio</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Fontawesome/css/all.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- navigation -->
+    <nav>
+      <div class="nav-container">
+        <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+          <span>Mahmud</span>
+        </div>
+        <!-- Desktop Navigation -->
+        <ul class="links">
+          <li
+            class="link"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-delay="100"
+          >
+            <a href="#home">Home</a>
+          </li>
+          <li
+            class="link"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-delay="200"
+          >
+            <a href="#about">About</a>
+          </li>
+          <li
+            class="link"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-delay="300"
+          >
+            <a href="#skills">Skills</a>
+          </li>
+          <li
+            class="link"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-delay="400"
+          >
+            <a href="#services">Services</a>
+          </li>
+          <li
+            class="link"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-delay="500"
+          >
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+        <button
+          class="mobile-menu-btn"
+          id="mobileMenuBtn"
+          aria-label="Open menu"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+
+    <!-- Mobile Navigation Menu -->
+    <div class="mobile-nav" id="mobileNav">
+      <button
+        class="mobile-nav-close"
+        id="mobileNavClose"
+        aria-label="Close menu"
+      >
+        <i class="fas fa-times"></i>
+      </button>
+      <ul class="mobile-nav-links">
+        <li><a href="#home" class="mobile-nav-link">Home</a></li>
+        <li><a href="#about" class="mobile-nav-link">About</a></li>
+        <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+        <li><a href="#services" class="mobile-nav-link">Services</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      </ul>
+    </div>
+    <!-- Hero section -->
+    <section id="home" class="page-section active">
+      <div class="main-container">
+        <div class="image" data-aos="zoom-out" data-aos-duration="3000">
+          <img src="img/hero 1.png" alt="Portfolio pic" width="700" height="" />
+        </div>
+        <div class="content">
+          <h1
+            data-aos="fade-left"
+            data-aos-duration="1500"
+            data-aos-delay="700"
+          >
+            Hey i'm
+            <span>Mahmud</span>
+          </h1>
+          <div
+            class="typewriter"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+            data-aos-delay="900"
+          >
+            <span style="--i: 4" data-text="Frontend Developer"
+              >Frontend Developer</span
+            >
+            <span style="--i: 3" data-text="UI/UX Designer"
+              >UI/UX Designer</span
+            >
+            <span style="--i: 2" data-text="Web Consultant"
+              >Web Consultant</span
+            >
+            <span style="--i: 1" data-text="Digital Creator"
+              >Digital Creator</span
+            >
+          </div>
+          <p
+            data-aos="flip-down"
+            data-aos-duration="1500"
+            data-aos-delay="1100"
+          >
+            I craft exceptional digital experiences through innovative design
+            and robust development. Passionate about transforming ideas into
+            high-performance web solutions that drive real business results.
+          </p>
+
+          <div class="social-links">
+            <a
+              href="https://github.com/Mahmud1Available"
+              target="_blank"
+              rel="noopener"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="1300"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a
+              href="https://wa.me/2349013486998"
+              target="_blank"
+              rel="noopener"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="1400"
+            >
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a
+              href="#"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="1500"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a
+              href="#"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="1600"
+            >
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+          </div>
+
+          <a
+            href="#contact"
+            class="btn"
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+            data-aos-delay="1800"
+          >
+            <button>Let's Chat</button>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- About section -->
+
+    <section class="about page-section" id="about">
+      <div class="content">
+        <div class="title" data-aos="fade-up" data-aos-duration="1500">
+          <span>About Me</span>
+        </div>
+        <div class="about-details">
+          <div
+            class="left"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+            data-aos-delay="200"
+          >
+            <img src="img/hero 2.png" alt="portfolio" />
+          </div>
+          <div class="right">
+            <div
+              class="topic"
+              data-aos="fade-left"
+              data-aos-duration="1500"
+              data-aos-delay="200"
+            >
+              Crafting Digital Excellence
+            </div>
+            <p
+              data-aos="flip-down"
+              data-aos-duration="1500"
+              data-aos-delay="300"
+            >
+              As a dedicated web professional with extensive expertise in modern
+              development frameworks and design principles, I specialize in
+              creating responsive, user-centric digital solutions. My approach
+              combines technical precision with creative vision to deliver
+              exceptional results.
+            </p>
+            <div
+              class="button"
+              data-aos="zoom-in-right"
+              data-aos-duration="1500"
+              data-aos-delay="400"
+            >
+              <button>Download CV</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- My Skills Section Start -->
+    <section class="skills page-section" id="skills">
+      <div class="content">
+        <div class="title" data-aos="fade-up" data-aos-duration="1200">
+          <span>My Skills</span>
+        </div>
+        <div class="skills-details">
+          <div class="text">
+            <div
+              class="topic"
+              data-aos="fade-right"
+              data-aos-duration="1200"
+              data-aos-delay="200"
+            >
+              Expertise Through Experience
+            </div>
+            <p
+              data-aos="fade-right"
+              data-aos-duration="1200"
+              data-aos-delay="400"
+            >
+              My technical proficiency spans cutting-edge technologies and
+              proven methodologies, ensuring optimal performance and exceptional
+              user experiences across all platforms and devices.
+            </p>
+            <div
+              class="experience"
+              data-aos="fade-up"
+              data-aos-duration="1200"
+              data-aos-delay="600"
+            >
+              <div class="experience">
+                <div class="num" data-target="5">
+                  0
+                  <span class="exp"> Years Of<br />Experience </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="boxes">
+            <div class="box">
+              <div
+                class="topic"
+                data-aos="fade-right"
+                data-aos-duration="1200"
+                data-aos-delay="150"
+              >
+                Frontend Development
+              </div>
+              <div
+                class="per"
+                data-target="95"
+                data-aos="zoom-in"
+                data-aos-duration="1200"
+                data-aos-delay="300"
+              >
+                0%
+              </div>
+            </div>
+            <div class="box">
+              <div
+                class="topic"
+                data-aos="fade-left"
+                data-aos-duration="1200"
+                data-aos-delay="150"
+              >
+                UI/UX Design
+              </div>
+              <div
+                class="per"
+                data-target="90"
+                data-aos="zoom-in"
+                data-aos-duration="1200"
+                data-aos-delay="300"
+              >
+                0%
+              </div>
+            </div>
+            <div class="box">
+              <div
+                class="topic"
+                data-aos="fade-right"
+                data-aos-duration="1200"
+                data-aos-delay="450"
+              >
+                Responsive Design
+              </div>
+              <div
+                class="per"
+                data-target="92"
+                data-aos="zoom-in"
+                data-aos-duration="1200"
+                data-aos-delay="600"
+              >
+                0%
+              </div>
+            </div>
+            <div class="box">
+              <div
+                class="topic"
+                data-aos="fade-left"
+                data-aos-duration="1200"
+                data-aos-delay="450"
+              >
+                Performance Optimization
+              </div>
+              <div
+                class="per"
+                data-target="88"
+                class="per"
+                data-aos="zoom-in"
+                data-aos-duration="1200"
+              >
+                0%
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- My services -->
+    <section class="services page-section" id="services">
+      <div class="container">
+        <div class="title" data-aos="fade-up" data-aos-duration="1200">
+          <span>My Services</span>
+        </div>
+        <div class="boxes">
+          <div
+            class="box"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-delay="100"
+          >
+            <div class="icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <div class="topic">Web Development</div>
+            <p>
+              Custom website development using modern technologies for optimal
+              performance and seamless user experiences across all devices.
+            </p>
+          </div>
+          <div
+            class="box"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-delay="200"
+          >
+            <div class="icon">
+              <i class="fas fa-palette"></i>
+            </div>
+            <div class="topic">UI/UX Design</div>
+            <p>
+              Intuitive interface design focusing on user experience, visual
+              aesthetics, and seamless interaction flows for digital products.
+            </p>
+          </div>
+          <div
+            class="box"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-delay="300"
+          >
+            <div class="icon">
+              <i class="fab fa-google"></i>
+            </div>
+            <div class="topic">Google Forms Automation</div>
+            <p>
+              Professional Google Forms creation with advanced automation, data
+              validation, and seamless integration capabilities.
+            </p>
+          </div>
+          <div
+            class="box"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-delay="400"
+          >
+            <div class="icon">
+              <i class="fas fa-robot"></i>
+            </div>
+            <div class="topic">Chatbot Development</div>
+            <p>
+              Intelligent chatbot solutions for Telegram and web platforms with
+              natural language processing capabilities.
+            </p>
+          </div>
+          <div
+            class="box"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-delay="500"
+          >
+            <div class="icon">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <div class="topic">Responsive Design</div>
+            <p>
+              Creating websites that adapt perfectly to all screen sizes
+              ensuring optimal viewing on any device or platform.
+            </p>
+          </div>
+          <div
+            class="box"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-delay="600"
+          >
+            <div class="icon">
+              <i class="fas fa-tachometer-alt"></i>
+            </div>
+            <div class="topic">Performance Optimization</div>
+            <p>
+              Website speed optimization and performance enhancement for faster
+              loading and improved user engagement.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--My Contact  -->
+    <section id="contact" class="contact">
+      <div class="container" id="contactme">
+        <div class="title" data-aos="fade-up" data-aos-duration="1500">
+          <span>Contact Me</span>
+        </div>
+        <div
+          class="contact-content"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+        >
+          <div class="contact-info">
+            <h3 class="topic">Let's Build Something Amazing</h3>
+            <p>
+              Ready to transform your digital presence? Let's collaborate to
+              create innovative solutions that drive results and exceed
+              expectations.
+            </p>
+
+            <div
+              class="contact-details"
+              data-aos="fade-right"
+              data-aos-duration="500"
+            >
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+
+                <a href="mailto:adebisimahmud04@gmail.com" class="contact-text">
+                  <h4>Email</h4>
+                  <p>adebisimahmud04@gmail.com</p>
+                </a>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <a
+                  href="https://wa.me/2348034938599"
+                  target="_blank"
+                  rel="noopener"
+                  class="contact-text"
+                >
+                  <h4>Phone</h4>
+                  <p>+234 803 493 8599</p>
+                </a>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="contact-text">
+                  <h4>Location</h4>
+                  <p>Abuja, Nigeria</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form">
+            <form
+              action="https://formspree.io/f/mlggzjzo"
+              method="POST"
+              id="contactForm"
+            >
+              <div class="form-group">
+                <label for="name" class="form-label">Your Name</label>
+                <input
+                  name="name"
+                  type="text"
+                  id="name"
+                  class="form-control"
+                  placeholder="Enter your name"
+                  required
+                  minlength="8"
+                />
+                <div class="error-message" id="nameError">
+                  Name must be at least 8 characters
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">Your Email</label>
+                <input
+                  name="email"
+                  type="email"
+                  id="email"
+                  class="form-control"
+                  placeholder="Enter your email"
+                  required
+                />
+                <div class="error-message" id="emailError">
+                  Please enter a valid email address
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="subject" class="form-label">Project Type</label>
+                <input
+                  name="subject"
+                  type="text"
+                  id="subject"
+                  class="form-control"
+                  placeholder="Website, Design, Automation, etc."
+                  required
+                  minlength="5"
+                />
+                <div class="error-message" id="subjectError">
+                  Subject must be at least 5 characters
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">Project Details</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  class="form-control"
+                  rows="5"
+                  placeholder="Describe your project requirements"
+                  required
+                  minlength="10"
+                ></textarea>
+                <div class="error-message" id="messageError">
+                  Message must be at least 10 characters
+                </div>
+              </div>
+
+              <!-- Formspree hidden fields -->
+              <input
+                type="hidden"
+                name="_subject"
+                value="New Contact Form Submission"
+              />
+              <input type="hidden" name="_replyto" value="" />
+              <input type="text" name="_gotcha" style="display: none" />
+
+              <button type="submit" class="btn-primary btn-full" id="submitBtn">
+                Send Message
+                <i class="fas fa-paper-plane"></i>
+              </button>
+
+              <div
+                class="success-message"
+                id="successMessage"
+                style="display: none"
+              >
+                <i class="fas fa-check-circle"></i> Thank you! Your message has
+                been sent successfully.
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Back to top btn -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Footer section start -->
+    <footer>
+      <div class="text">
+        <span>
+          Created By
+          <a href="#">Taghyir Labs</a>
+          &#169;2025 All Rights Reserved
+        </span>
+      </div>
+    </footer>
+    <script src="scripts.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({ offset: 0 });
+    </script>
+  </body>
+</html>
