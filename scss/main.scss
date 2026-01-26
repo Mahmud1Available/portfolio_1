@@ -1,0 +1,32 @@
+// ============================================
+// MAIN SCSS FILE
+// ============================================
+// This file imports all SCSS partials in the correct order
+
+// ============================================
+// 1. BASE - Variables & Globals
+// ============================================
+@import "base/variables";
+@import "base/globals";
+
+// ============================================
+// 2. LAYOUT - Navigation & Footer
+// ============================================
+@import "layout/navbar";
+@import "layout/footer";
+
+// ============================================
+// 3. SECTIONS - Page sections
+// ============================================
+@import "sections/home";
+@import "sections/about";
+@import "sections/skills";
+@import "sections/services";
+@import "sections/contact";
+
+// ============================================
+// 4. RESPONSIVE - Media queries
+// ============================================
+@import "responsive/mobile";
+@import "responsive/tablet";
+@import "responsive/desktop";

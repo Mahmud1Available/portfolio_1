@@ -1,0 +1,51 @@
+// ============================================
+// VARIABLES - Colors, Spacing, Typography
+// ============================================
+
+// Primary Colors
+$bg-primary: #121212;
+$bg-primary2: linear-gradient(180deg, #0e0e10 0%, #121214 40%, #0b0b0d 100%);
+$bg-primary3: #0b0b0d;
+
+// Card & Surface Colors
+$bg-card: #1e1e2a;
+$bg-card-alt: #242433;
+$bg-card2: #141416;
+$bg-card-hover2: #1c1c1f;
+$bg-card3: #17171b;
+$bg-card-hover3: #1f1f24;
+$bg-surface3: #121215;
+
+// Text Colors
+$text-primary: #e6e1d8;
+$text-secondary: #b0b0b0;
+$text-primary2: #e4e4e7;
+$text-primary3: #e6e6eb;
+$text-muted: #a1a1aa;
+$text-muted3: #9a9aa3;
+$text-dark: #121212;
+
+// Accent Colors
+$accent: #d8cfc4;
+$accent-hover: #c9bfb4;
+$accent2: #cfcfcf;
+$accent3: #d6d6dc;
+
+// UI Colors
+$icon-bg: #1e1e2a;
+$red-color: #b74b4b;
+
+// Borders
+$border-soft3: rgba(255, 255, 255, 0.06);
+
+// Transitions & Effects
+$transition: all 0.3s ease;
+$border-radius: 8px;
+
+// Responsive Breakpoints
+$mobile-max: 767px;
+$tablet-min: 768px;
+$tablet-max: 1203px;
+$desktop-min: 1204px;
+$large-desktop-min: 1200px;
+$small-mobile-max: 400px;

@@ -1,0 +1,245 @@
+// ============================================
+// NAVBAR STYLES
+// ============================================
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background-color: $bg-primary2;
+  backdrop-filter: blur(14px);
+  z-index: 1001;
+  padding: 1rem 0;
+  transition: $transition;
+  box-sizing: border-box;
+  overflow: hidden;
+  right: 0;
+
+  &.scrolled {
+    background: linear-gradient(
+      180deg,
+      rgba(14, 14, 16, 0.98),
+      rgba(10, 10, 12, 0.98)
+    );
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+}
+
+// ============================================
+// NAV CONTAINER
+// ============================================
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 100%;
+
+  .links {
+    display: none;
+  }
+}
+
+.nav-link a {
+  color: #a8a8a8;
+  position: relative;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: #e6e1da;
+  }
+
+  &.active {
+    color: #ffffff !important;
+    font-weight: 600;
+    position: relative;
+    padding-right: 26px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 9px;
+      height: 9px;
+      background: #e6ded4;
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+      box-shadow: 0 0 8px rgba(230, 222, 212, 0.8);
+    }
+  }
+}
+
+// ============================================
+// LOGO
+// ============================================
+
+.logo {
+  color: $accent;
+  font-size: 1.5rem;
+  font-weight: 700;
+  z-index: 1001;
+  white-space: nowrap;
+  flex-shrink: 0;
+  padding-right: 1rem;
+
+  span {
+    color: #e6e1da;
+    font-weight: 700;
+  }
+}
+
+// ============================================
+// MOBILE MENU BUTTON
+// ============================================
+
+.mobile-menu-btn {
+  background: none;
+  border: none;
+  color: $accent;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 1001;
+  padding: 0.5rem;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  min-width: 44px;
+  height: auto;
+  min-height: 44px;
+}
+
+// ============================================
+// MOBILE NAV OVERLAY
+// ============================================
+
+.mobile-nav-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transition: $transition;
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+// ============================================
+// MOBILE NAV MENU
+// ============================================
+
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 280px;
+  height: 100%;
+  background: linear-gradient(180deg, #111215 0%, #0d0f13 100%);
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+  padding: 5rem 2rem 2rem;
+  box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
+  z-index: 1002;
+
+  &.active {
+    transform: translateX(0);
+  }
+}
+
+.mobile-nav-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: none;
+  border: none;
+  color: $accent;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.mobile-nav-links {
+  list-style: none;
+
+  li {
+    margin-bottom: 1rem;
+  }
+}
+
+.mobile-nav-link {
+  display: block;
+  color: #c7c9d1;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 0.75rem 1rem;
+  border-radius: $border-radius;
+  transition: $transition;
+
+  &:hover {
+    background: rgba(108, 99, 255, 0.08);
+    color: #e8e9ff;
+  }
+
+  &.active {
+    background-color: #14161b;
+    color: #ffffff;
+    border-left: 3px solid #2f323a;
+    padding-left: 15px !important;
+  }
+}
+
+// ============================================
+// ACTIVE NAVIGATION LINK STYLING
+// ============================================
+
+.nav-link a.active,
+.links a.active,
+.mobile-nav-link.active {
+  color: #fff !important;
+  font-weight: 600;
+  position: relative;
+}
+
+.links a.active {
+  color: #ffffff !important;
+  font-weight: 600;
+  position: relative;
+  padding-right: 26px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 9px;
+    height: 9px;
+    background: #e6ded4;
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+    box-shadow: 0 0 8px rgba(230, 222, 212, 0.8);
+  }
+}
+
+// ============================================
+// DESKTOP NAVIGATION - Hidden on Mobile
+// ============================================
+
+.nav-links {
+  display: none;
+}

@@ -5,7 +5,7 @@
 A modern, responsive portfolio website showcasing my skills as a Frontend Developer, UI/UX Designer, and Digital Creator. Built with HTML, CSS, and JavaScript, featuring smooth animations, interactive elements, and a professional design.
 
 ## 🌐 Live Demo
-**[View Live Site](https://mahmud-portfolio.vercel.app)** | **[GitHub Repository](https://github.com/Mahmud1Available/portfolio)**
+**[View Live Site]((https://mahmuddev.vercel.app/))** | **[GitHub Repository](https://github.com/Mahmud1Available/portfolio)**
 
 ## 📸 Screenshots
 
@@ -45,18 +45,32 @@ A modern, responsive portfolio website showcasing my skills as a Frontend Develo
 
 ```
 portfolio/
-├── index.html # Main HTML file
-├── style.css # Main stylesheet
-├── scripts.js # JavaScript functionality
-├── screenshot.png # Main screenshot (1920x1080)
-├── img/ # Images and assets
-│ ├── hero 1.png
-│ ├── hero 3.png
-│ └── hero 4.png
-├── Fontawesome/ # Font Awesome icons
-│ └── css/
-│ └── all.css
-└── README.md # This file
+├── index.html              # Main HTML file
+├── css/
+│   ├── main.css            # Compiled CSS (DO NOT EDIT DIRECTLY)
+│   └── main.css.map        # Source map for debugging
+├── scss/
+│   ├── main.scss           # Root Sass file
+│   ├── _variables.scss     # Colors, fonts, spacing
+│   ├── _base.scss          # Reset, globals, typography
+│   ├── _nav.scss           # Navbar styles
+│   ├── _about.scss         # About section
+│   ├── _services.scss      # Services section
+│   ├── _skills.scss        # Skills section
+│   ├── _contact.scss       # Contact section
+│   └── _mobile.scss        # Mobile & responsive styles
+├── js/
+│   └── scripts.js          # JavaScript functionality
+├── img/
+│   ├── hero-1.png
+│   ├── hero-3.png
+│   └── hero-4.png
+├── Fontawesome/
+│   └── css/
+│       └── all.css
+├── screenshot.png          # Project preview (1920x1080)
+└── README.md
+
 ```
 
 ## 🚀 Getting Started
@@ -86,9 +100,28 @@ portfolio/
      ```
 
 3. **Make changes**
-   - Edit `index.html` for content
-   - Edit `style.css` for styling
-   - Edit `scripts.js` for functionality
+## Styling (Sass / SCSS)
+
+This project uses **Sass (SCSS)** for styling.
+
+⚠️ Do NOT edit `css/main.css` directly.  
+It is a compiled file and will be overwritten.
+
+### How it works
+- All styles are written in the `scss/` folder
+- `scss/main.scss` imports all partials
+- Sass compiles into `css/main.css`
+- `index.html` links only to `css/main.css`
+
+### Edit styles here:
+- Colors & variables → `scss/_variables.scss`
+- Navbar → `scss/_nav.scss`
+- About section → `scss/_about.scss`
+- Services → `scss/_services.scss`
+- Skills → `scss/_skills.scss`
+- Contact → `scss/_contact.scss`
+- Mobile styles → `scss/_mobile.scss`
+
 
 ## 📦 Deployment
 
@@ -108,7 +141,7 @@ portfolio/
    - Import your repository
    - Click "Deploy"
 
-   Your site will be live at: `https://your-project-name.vercel.app`
+   Your site will be live at: `https://mahmuddev.vercel.app/`
 
 ### Deploy to GitHub Pages
 

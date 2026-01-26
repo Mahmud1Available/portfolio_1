@@ -1,0 +1,185 @@
+// ============================================
+// TABLET STYLES (min-width: 768px)
+// ============================================
+
+@media screen and (min-width: $tablet-min) {
+  // Navigation
+  .nav-container {
+    padding: 0 30px;
+  }
+
+  .logo {
+    font-size: 1.8rem;
+  }
+
+  // Hero Section
+  section .main-container {
+    padding: 30px;
+  }
+
+  .main-container .image {
+    width: 300px;
+    height: 300px;
+  }
+
+  .content h1 {
+    font-size: 2.3rem;
+  }
+
+  .content .typewriter {
+    font-size: 2rem;
+  }
+
+  .content p {
+    font-size: 1rem;
+  }
+
+  .social-links i {
+    width: 2.8rem;
+    height: 2.8rem;
+    font-size: 1.3rem;
+  }
+
+  .content button {
+    width: 60%;
+    height: 50px;
+    font-size: 1.1rem;
+  }
+
+  // About Section
+  .about {
+    padding: 50px 30px;
+  }
+
+  section .title span {
+    font-size: 2rem;
+  }
+
+  .about .left img {
+    width: 300px;
+    height: 300px;
+  }
+
+  section .topic {
+    font-size: 1.7rem;
+  }
+
+  .about-details .right p {
+    font-size: 1rem;
+  }
+
+  section .button button {
+    padding: 12px 30px;
+    font-size: 1.1rem;
+  }
+
+  // Skills Section
+  .skills {
+    padding: 50px 30px;
+  }
+
+  .skills-details .experience .num {
+    width: 140px;
+    height: 140px;
+    font-size: 3.5rem;
+  }
+
+  .skills-details .boxes {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  .skills-details .boxes .topic {
+    font-size: 1.2rem;
+  }
+
+  .skills-details .boxes .per {
+    font-size: 3rem;
+  }
+
+  // Services Section
+  .services {
+    padding: 50px 30px;
+
+    .boxes {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+    }
+
+    .boxes .box {
+      padding: 30px 20px;
+
+      .icon {
+        height: 50px;
+        width: 50px;
+        line-height: 50px;
+        font-size: 1.3rem;
+      }
+
+      .topic {
+        font-size: 1.3rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  // Contact Section
+  .contact {
+    padding: 50px 30px;
+
+    .content {
+      margin: 0 auto;
+    }
+  }
+
+  .contact-info .topic {
+    font-size: 1.7rem;
+  }
+
+  .contact-info p {
+    font-size: 1rem;
+  }
+
+  .contact-icon {
+    width: 45px;
+    height: 45px;
+    font-size: 1.1rem;
+  }
+
+  .contact-text h4 {
+    font-size: 1.1rem;
+  }
+
+  .contact-form {
+    padding: 30px 25px;
+  }
+
+  // Footer
+  footer .text span {
+    font-size: 1rem;
+  }
+
+  // Back to Top Button
+  .back-to-top {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+  }
+
+  .page-section {
+    display: block !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .page-section:not(:first-child) {
+    margin-top: 80px;
+  }
+
+  .scroll-indicator {
+    display: block !important;
+  }
+}

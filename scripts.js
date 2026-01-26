@@ -433,6 +433,28 @@ document.addEventListener("DOMContentLoaded", function () {
   //     }
   // });
 
+  // Ensure header 'scrolled' state reflects current section immediately
+  function updateHeaderState() {
+    const nav = document.querySelector("nav");
+    if (!nav) return;
+
+    const homeSection = document.getElementById("home");
+    if (homeSection) {
+      const homeBottom = homeSection.getBoundingClientRect().bottom;
+      // If the bottom of the home section has moved above the header threshold,
+      // enable scrolled state. Adjust threshold (60) as needed.
+      if (homeBottom <= 60) {
+        nav.classList.add("scrolled");
+      } else {
+        nav.classList.remove("scrolled");
+      }
+    } else {
+      // Fallback to previous behavior
+      if (window.scrollY > 50) nav.classList.add("scrolled");
+      else nav.classList.remove("scrolled");
+    }
+  }
+
   // ===== ACTIVE NAV LINK ON SCROLL =====
   function updateActiveNavOnScroll() {
     const sections = document.querySelectorAll("section[id]");
@@ -482,17 +504,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // rgba(30, 30, 42, 0.95)
   // Add this to your existing JavaScript
   window.addEventListener("scroll", function () {
-    const nav = document.querySelector("nav");
-    const scrollPosition = window.scrollY; // Use window.scrollY, not +100
-
-    console.log("Scroll position:", scrollPosition); // For debugging
-
-    // 1. HEADER SCROLL EFFECT - This should work properly now
-    if (scrollPosition > 50) {
-      nav.classList.add("scrolled");
-    } else {
-      nav.classList.remove("scrolled");
-    }
+    updateHeaderState();
 
     // 2. ACTIVE NAV LINK DETECTION (your working code)
     const sections = document.querySelectorAll("section[id]");
@@ -527,9 +539,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Also trigger on page load
   document.addEventListener("DOMContentLoaded", function () {
-    // Manually trigger scroll event to set initial state
+    // Set initial header/nav state immediately
+    updateHeaderState();
+    // Also trigger a scroll event shortly after load to ensure all listeners sync
     setTimeout(() => {
       window.dispatchEvent(new Event("scroll"));
-    }, 100);
+    }, 50);
   });
 });

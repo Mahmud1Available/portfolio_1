@@ -1,0 +1,63 @@
+// ============================================
+// FOOTER STYLES
+// ============================================
+
+footer {
+  background: #070709;
+  padding: 25px 0;
+  text-align: center;
+  border-top: 1px solid var(--border-soft);
+  color: $text-muted3;
+  box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.6);
+
+  .text span {
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: $text-secondary;
+
+    a {
+      font-weight: 500;
+      color: $accent;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+// ============================================
+// BACK TO TOP BUTTON
+// ============================================
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 45px;
+  height: 45px;
+  background-color: $accent;
+  color: $bg-primary;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: $transition;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+
+  &.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &:hover {
+    background-color: $accent-hover;
+    transform: translateY(-3px);
+  }
+}
