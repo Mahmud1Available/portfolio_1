@@ -378,21 +378,31 @@ section .main-container {
 }
 
 .main-container .image {
-  width: 250px;
-  height: 250px;
+  /* Responsive circular container: keeps a perfect 1:1 aspect ratio */
+  width: clamp(160px, 28vw, 250px);
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  overflow: hidden;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  /* decorate the circle here so borders/shadows don't distort the inner image */
+  box-sizing: border-box;
+  border: 4px solid #ffffff;
+  box-shadow: 0 5px 15px rgba(216, 207, 196, 0.2);
+  animation: float 1.5s ease-in-out infinite;
 }
 .main-container .image img {
+  display: block;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 50%;
-  border: 3px solid #d8cfc4;
-  box-shadow: 0 5px 15px rgba(216, 207, 196, 0.2);
-  animation: float 1.5s ease-in-out infinite;
+  -o-object-position: center center;
+     object-position: center center;
+  /* image itself does not need a border-radius because the container clips overflow */
+  border-radius: 0;
 }
 
 .main-container .content {
